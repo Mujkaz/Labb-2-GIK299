@@ -13,14 +13,14 @@ namespace GIK299_Laboration_2_h23vilmu
             //Samling av variablar.
             int[] familyMemberAges;
             string[] familyMemberNames;
-            int totalAge = 0;
+            double totalAge = 0;
 
 
             //Skapande av arrayer före meny för att ha globala varianblar
             Console.WriteLine("Skriv antal familjemedlemmar du vill lägga till.");
-            int numberOfMember = Int32.Parse(Console.ReadLine());
-            familyMemberAges = new int[numberOfMember];
-            familyMemberNames = new string[numberOfMember];
+            Double numberOfMember = Double.Parse(Console.ReadLine());
+            familyMemberAges = new int[(int)numberOfMember];
+            familyMemberNames = new string[(int)numberOfMember];
             Console.WriteLine("Du har skrivit in " + numberOfMember + " st familjemedlemmar, var god välj det första alternativet i menyn.");
 
             Console.WriteLine("");
